@@ -1,0 +1,20 @@
+{{! hbs files are basically written like HTML files but they have added functionality to add dynamic content}}
+{{! Insert dynamic content using double curly brackets (as below). Values are passed in via the res.render function in Express route.}}
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- add link to stylesheet for css-->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <div class="page-content">
+      {{>header}}
+      <p>{{message}}</p>
+      {{>footer}}
+    </div>
+
+  </body>
+</html>

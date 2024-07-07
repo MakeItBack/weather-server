@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- add link to stylesheet for css-->
+    <link rel="stylesheet" href="/css/styles.css" />
+    {{!-- add links to javascript --}}
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <div class="page-content">
+      {{>header}}
+      <p>{{message}}</p>
+
+      <form>
+        <input id="search-input" placeholder="Enter city name">
+        <button id="search-button">Get Weather</button>
+      </form>
+
+      <p id="location-block"></p>
+      <p id="weather-block"></p>
+
+      {{>footer}}
+    </div>
+
+    <script src="/js/app.js"></script> {{!-- Run the javascript last, once the page has loaded --}}
+  </body>
+</html>
