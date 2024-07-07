@@ -58,7 +58,7 @@ weatherForm.addEventListener("submit", (e) => {
   weatherBlock.textContent = "Loading...";
 
   axios
-    .get(`http://localhost:8080/forecastdata?address=${address}`)
+    .get(`/forecastdata?address=${address}`)
     .then((response) => {
       if (response.data.error) {
         weatherBlock.textContent = response.data.error;
