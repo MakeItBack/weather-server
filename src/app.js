@@ -28,8 +28,8 @@ app.get("/", (req, res) => {
   res.render("index", {
     title: "Home",
     pageName: "Homepage",
-    message: "Home message",
-    author: "John Doe",
+    message: "Go ahead punk, check the weather forecast",
+    author: "MakeItBack",
   });
 });
 
@@ -38,7 +38,7 @@ app.get("/weather", (req, res) => {
     title: "Weather",
     pageName: "Weather Page",
     message: "Enter a location to get the weather forecast",
-    author: "John Doe",
+    author: "MakeItBack",
   });
 });
 
@@ -51,7 +51,7 @@ app.get("*", (req, res) => {
     errorMessage: "Page not found",
     title: "404 Error",
     pageName: "404 Error",
-    author: "John Doe",
+    author: "MakeItBack",
   });
 });
 
